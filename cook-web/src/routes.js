@@ -13,14 +13,6 @@ var routes = [
     visible:false,
   },
    
-  {
-    path: '/singleRecipe/:id',
-    name: 'Recipe Detail',
-    icon: 'ni ni-bullet-list-67 text-green',
-    component: RecipeDetail,
-   
-    visible: false,
-  },
 
 ];
 export default routes;

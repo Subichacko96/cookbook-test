@@ -7,9 +7,9 @@ exports.listAllRecipe = async (req, res) => {
   params = req.query;
 
 
-  //list all news
+  //list all recipe
   findCriteria = {
-    // coOrdinatorId,
+
     status: 1,
   };
 
@@ -66,7 +66,7 @@ exports.listCategory = async (req, res) => {
         data: null,
       };
     });
-    console.log(allCategoryData,"please sort array")
+   
   if (
     allCategoryData &&
     allCategoryData.error !== undefined &&

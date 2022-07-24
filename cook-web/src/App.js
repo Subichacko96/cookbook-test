@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './style.css';
 import Recipe from './components/Recipe';
-import RecipeDetail from './components/RecipeDetail';
+
 import Navbar from './components/Navbar';
 
 
@@ -16,7 +16,7 @@ function App() {
      <Navbar/>
           <Routes>
             <Route exact path="/" element={<Recipe />} />
-            <Route path="/singleRecipe/detail" element={<RecipeDetail />} />
+           
           </Routes>
         
         </BrowserRouter>

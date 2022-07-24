@@ -82,7 +82,7 @@ exports.createRecipe = async (req, res) => {
 };
 
 exports.listRecipe = async (req, res) => {
-  // let coOrdinatorId = req.user.id;
+ 
  
    let params = req.query;
    let findCriteria = {
@@ -119,7 +119,7 @@ exports.listRecipe = async (req, res) => {
  };
 
  exports.getRecipeDetail = async (req, res) => {
-  // let coOrdinatorId = req.user.id;
+
   let recipeId = req.params.id;
 
   let isValidId = ObjectId.isValid(recipeId);
@@ -133,7 +133,7 @@ exports.listRecipe = async (req, res) => {
   }
   let findCriteria = {
     _id: recipeId,
-    // coOrdinatorId,
+    
     status: 1,
   };
   var RecipeData = await Recipe.findOne(findCriteria).catch((error) => {
